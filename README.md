@@ -46,12 +46,18 @@ docker-compose exec web alembic revision --autogenerate -m "Initial migration"
 docker-compose exec web alembic upgrade head
 ```
 
-## Acessando os Containers
+### Acessando os Containers
 
 ```
 docker ps
 docker exec -it 7d11ccb5759a /bin/bash
 docker exec -it 18f535251ccb -U myuser -d mydatabase
+```
+
+### Executando os Testes
+
+```
+python -m unittest tests.test_app
 ```
 
 ### Uso
