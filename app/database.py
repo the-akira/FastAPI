@@ -17,10 +17,3 @@ async_session = sessionmaker(
     expire_on_commit=False,
 )
 Base = declarative_base()
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
