@@ -24,7 +24,7 @@ Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
 POSTGRES_USER=myuser
 POSTGRES_PASSWORD=mypassword
 POSTGRES_DB=mydatabase
-DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+DB_URL=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
 EMAIL=enderecoemail
 EMAIL_PASSWORD=senhaemail
 ```
