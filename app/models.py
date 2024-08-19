@@ -2,9 +2,6 @@ from sqlmodel import SQLModel, Field
 from sqlalchemy import Column, JSON
 from typing import List, Optional
 
-# alembic revision --autogenerate -m "Initial migration"
-# alembic upgrade head
-
 class SongBase(SQLModel):
     name: str
     artist: str

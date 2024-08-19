@@ -11,5 +11,5 @@ class SongCreate(BaseModel):
 
 class EmailRequest(BaseModel):
     email: str
-    subject: str  # Novo campo para o assunto do email
+    subject: str
     message: str
