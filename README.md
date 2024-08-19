@@ -31,7 +31,7 @@ EMAIL_PASSWORD=senhaemail
 
 Substitua as informações com as suas credenciais.
 
-### Construir e Subir os Containers
+### Iniciando a Aplicação
 
 ```
 docker-compose up --build
@@ -44,6 +44,14 @@ Isso vai construir os containers e iniciar a aplicação.
 ```
 docker-compose exec web alembic revision --autogenerate -m "Initial migration"
 docker-compose exec web alembic upgrade head
+```
+
+## Acessando os Containers
+
+```
+docker ps
+docker exec -it 7d11ccb5759a /bin/bash
+docker exec -it 18f535251ccb -U myuser -d mydatabase
 ```
 
 ### Uso
